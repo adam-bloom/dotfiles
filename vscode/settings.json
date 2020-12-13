@@ -1,0 +1,9 @@
+{
+    "window.zoomLevel": 0,
+    "workbench.colorTheme": "(Actual) Obsidian",
+    "editor.fontFamily": "DejaVuSansMono Nerd Font, Menlo, Monaco, 'Courier New', monospace",
+    "telemetry.enableTelemetry": false,
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.fontFamily": "DejaVuSansMono Nerd Font",
+    "terminal.integrated.shell.osx": "/bin/zsh"
+}
