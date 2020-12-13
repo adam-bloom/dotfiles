@@ -48,6 +48,8 @@ defaults write com.googlecode.iterm2 PrefsCustomFolder -string "$(pwd)/iterm2"
 # setup vscode...must already be installed and `code` executable must be in path
 ln -sf "$(pwd)/vscode/settings.json" "$HOME/Library/Application Support/Code/User/settings.json"
 code --install-extension zehfernando.theme-actual-obsidian
+code --install-extension ms-python.python
+code --install-extension ms-vscode.cpptools
 
 # sublime text settings
 ln -sf "$(pwd)/sublime_text/Preferences.sublime-settings" "$HOME/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings"
