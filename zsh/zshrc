@@ -79,6 +79,7 @@ plugins=(
 	command-not-found
 	copyfile
 	docker
+	extract
 	git
 	jira
 	osx	
@@ -87,7 +88,9 @@ plugins=(
 	python
 	sublime
 	virtualenv
+	virtualenvwrapper
 	vscode
+	autoenv
 	zsh-syntax-highlighting
 )
 
@@ -125,3 +128,6 @@ export CPATH="$CPATH:/usr/local/include"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+export PROJECT_HOME=$HOME/Development
