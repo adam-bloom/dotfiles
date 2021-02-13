@@ -6,5 +6,22 @@
     "terminal.integrated.cursorStyle": "line",
     "terminal.integrated.fontFamily": "DejaVuSansMono Nerd Font",
     "terminal.integrated.shell.osx": "/bin/zsh",
-    "python.languageServer": "Pylance"
+    "python.languageServer": "Pylance",
+    "explorer.confirmDelete": false,
+    "editor.wordWrap": "on",
+    "workbench.editor.decorations.badges": true,
+    "workbench.editor.decorations.colors": true,
+    "workbench.editor.wrapTabs": true,
+    "[python]": {
+
+        "gitlens.codeLens.symbolScopes": [
+            "!Module"
+        ],
+        "editor.wordBasedSuggestions": false
+    },
+    "jupyter.runStartupCommands": [
+        "import sys; sys.path.insert(0, '${workspaceRoot}')"
+    ],
+    "jupyter.askForKernelRestart": false,
+    "jupyter.textOutputLimit": 50000
 }
