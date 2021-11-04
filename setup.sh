@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # If we on macOS, install homebrew and tweak system a bit.
 if [[ `uname` == 'Darwin' ]]; then
@@ -9,7 +9,7 @@ if [[ `uname` == 'Darwin' ]]; then
   fi
 
   # Homebrew packages.
-  brew install iterm2 visual-studio-code sublime-text
+  brew install iterm2 visual-studio-code
 fi
 
 export OH_MY_ZSH_DIR=~/.oh-my-zsh
@@ -42,15 +42,14 @@ curl -fsSL -o "$HOME/Library/Fonts/DejaVu Sans Mono Bold Oblique Nerd Font Compl
 ln -sf "$(pwd)/zsh/zshrc" "$HOME/.zshrc"
 ln -sf "$(pwd)/zsh/p10k.zsh" "$HOME/.p10k.zsh"
 
-# setup iterm2
-defaults write com.googlecode.iterm2 PrefsCustomFolder -string "$(pwd)/iterm2"
+# continue with iterm/editor setup on macOS only
+if [[ `uname` == 'Darwin' ]]; then
+  # setup iterm2
+  defaults write com.googlecode.iterm2 PrefsCustomFolder -string "$(pwd)/iterm2"
 
-# setup vscode...must already be installed and `code` executable must be in path
-ln -sf "$(pwd)/vscode/settings.json" "$HOME/Library/Application Support/Code/User/settings.json"
-code --install-extension zehfernando.theme-actual-obsidian
-code --install-extension ms-python.python
-code --install-extension ms-vscode.cpptools
-
-# sublime text settings
-ln -sf "$(pwd)/sublime_text/Preferences.sublime-settings" "$HOME/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings"
-ln -sf "$(pwd)/sublime_text/Python.sublime-settings" "$HOME/Library/Application Support/Sublime Text 3/Packages/User/Python.sublime-settings"
+  # setup vscode...must already be installed and `code` executable must be in path
+  ln -sf "$(pwd)/vscode/settings.json" "$HOME/Library/Application Support/Code/User/settings.json"
+  code --install-extension zehfernando.theme-actual-obsidian
+  code --install-extension ms-python.python
+  code --install-extension ms-vscode.cpptools
+fi

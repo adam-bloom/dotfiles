@@ -86,7 +86,6 @@ plugins=(
 	pip
 	pyenv
 	python
-	sublime
 	virtualenv
 	virtualenvwrapper
 	vscode
@@ -131,3 +130,6 @@ export CPATH="$CPATH:/usr/local/include"
 
 export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
 export PROJECT_HOME=$HOME/Development
+
+bindkey "[D" backward-word
+bindkey "[C" forward-word
