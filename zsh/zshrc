@@ -82,7 +82,7 @@ plugins=(
 	extract
 	git
 	jira
-	osx	
+	macos	
 	pip
 	pyenv
 	python
