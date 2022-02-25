@@ -78,10 +78,12 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 plugins=(
 	command-not-found
 	copyfile
+	direnv
 	docker
 	extract
 	git
 	jira
+	kubectl
 	macos	
 	pip
 	pyenv
@@ -89,16 +91,24 @@ plugins=(
 	virtualenv
 	virtualenvwrapper
 	vscode
-	autoenv
 	zsh-syntax-highlighting
 )
 
+prefix='/usr/local'
+if [[ `uname` == 'Darwin' ]]; then
+	if [[ `uname -m` == 'arm64' ]]; then
+		prefix='/opt/homebrew'
+	fi
+	eval "$(${prefix}/bin/brew shellenv)"
+fi
+
+export LIBRARY_PATH="$LIBRARY_PATH:$prefix/lib"
+export CPATH="$CPATH:$prefix/include"
+export VIRTUALENVWRAPPER_PYTHON="$prefix/bin/python3"
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-
-# export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -122,14 +132,14 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export LIBRARY_PATH="$LIBRARY_PATH:/usr/local/lib"
-export CPATH="$CPATH:/usr/local/include"
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
 export PROJECT_HOME=$HOME/Development
 
 bindkey "[D" backward-word
 bindkey "[C" forward-word
+
+if [ -f ~/.zsh/local.zshrc ]; then
+    source ~/.zsh/local.zshrc
+fi
