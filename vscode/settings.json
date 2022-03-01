@@ -67,5 +67,13 @@
     ],
     "[javascript]": {
         "editor.tabSize": 2
-    }
+    },
+    "files.autoSave": "onFocusChange",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": true,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.DS_Store": true,
+        "**/node_modules": true,
+    },
 }
