@@ -10,6 +10,7 @@ if [[ `uname` == 'Darwin' ]]; then
 
   # Homebrew packages.
   brew install iterm2 visual-studio-code
+  brew tap homebrew/command-not-found
 fi
 
 export OH_MY_ZSH_DIR=~/.oh-my-zsh
@@ -26,6 +27,11 @@ fi
 ZSH_PLUGIN_SYN_HIGHLIGHT_DIR=${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 if [ ! -d "$ZSH_PLUGIN_SYN_HIGHLIGHT_DIR" ]; then
   git clone --depth=1 https://github.com/zsh-users/zsh-syntax-highlighting.git "$ZSH_PLUGIN_SYN_HIGHLIGHT_DIR"
+fi
+
+ZSH_PLUGIN_AUTOSUGGEST_DIR=${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+if [ ! -d "$ZSH_PLUGIN_AUTOSUGGEST_DIR" ]; then
+  git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions.git "$ZSH_PLUGIN_AUTOSUGGEST_DIR"
 fi
 
 # install fonts

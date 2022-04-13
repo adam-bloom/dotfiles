@@ -91,6 +91,7 @@ plugins=(
 	virtualenv
 	virtualenvwrapper
 	vscode
+	zsh-autosuggestions
 	zsh-syntax-highlighting
 )
 
@@ -105,6 +106,11 @@ fi
 export LIBRARY_PATH="$LIBRARY_PATH:$prefix/lib"
 export CPATH="$CPATH:$prefix/include"
 export VIRTUALENVWRAPPER_PYTHON="$prefix/bin/python3"
+
+if type brew &>/dev/null
+then
+  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+fi
 
 source $ZSH/oh-my-zsh.sh
 
