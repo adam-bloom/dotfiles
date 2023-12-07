@@ -1,79 +1,87 @@
 {
-    "workbench.colorTheme": "(Actual) Obsidian",
-    "editor.fontFamily": "DejaVuSansMono Nerd Font, Menlo, Monaco, 'Courier New', monospace",
-    "telemetry.enableTelemetry": false,
-    "terminal.integrated.cursorStyle": "line",
-    "terminal.integrated.fontFamily": "DejaVuSansMono Nerd Font",
-    "terminal.integrated.shell.osx": "/bin/zsh",
-    "python.languageServer": "Pylance",
-    "explorer.confirmDelete": false,
-    "editor.wordWrap": "on",
-    "workbench.editor.decorations.badges": true,
-    "workbench.editor.decorations.colors": true,
-    "workbench.editor.wrapTabs": true,
-    "[python]": {
-        "gitlens.codeLens.symbolScopes": [
-            "!Module"
-        ],
-        "editor.wordBasedSuggestions": false
-    },
-    "jupyter.runStartupCommands": [
-        "import sys; sys.path.insert(0, '${workspaceRoot}')"
-    ],
-    "jupyter.askForKernelRestart": false,
-    "jupyter.textOutputLimit": 50000,
-    "workbench.editorAssociations": {
-        "*.ipynb": "jupyter-notebook"
-    },
-    "files.insertFinalNewline": true,
-    "go.toolsManagement.autoUpdate": true,
-    "python.sortImports.args": [
-        "--profile",
-        "black",
-        "--line-length",
-        "120",
-        "--multi-line",
-        "3"
-    ],
-    "editor.codeActionsOnSave": {
-        "source.organizeImports": true,
-        "source.fixAll.eslint": true
-    },
-    "editor.formatOnSave": true,
-    "editor.formatOnType": true,
-    "[terraform]": {
-        "editor.defaultFormatter": "hashicorp.terraform"
-    },
-    "files.associations": {
-        "*.hcl": "terraform"
-    },
-    "yaml.customTags": [
-        "!encrypted/pkcs1-oaep scalar",
-        "!vault scalar"
-    ],
-    "ansible.validate.executablePath": "ansible-lint",
-    "notebook.cellToolbarLocation": {
-        "default": "right",
-        "jupyter-notebook": "left"
-    },
-    "files.watcherExclude": {
-        "": true
-    },
-    "python.testing.pytestEnabled": true,
-    "redhat.telemetry.enabled": false,
-    "window.zoomLevel": 1,
-    "eslint.validate": [
-        "javascript"
-    ],
-    "[javascript]": {
-        "editor.tabSize": 2
-    },
-    "files.autoSave": "onFocusChange",
-    "editor.bracketPairColorization.enabled": true,
-    "editor.guides.bracketPairs": true,
-    "files.exclude": {
-        "**/.git": true,
-        "**/.DS_Store": true,
-        "**/node_modules": true,
-    },
+  "workbench.colorTheme": "(Actual) Obsidian",
+  "editor.fontFamily": "DejaVuSansMono Nerd Font, Menlo, Monaco, 'Courier New', monospace",
+  "telemetry.enableTelemetry": false,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.fontFamily": "DejaVuSansMono Nerd Font",
+  "terminal.integrated.shell.osx": "/bin/zsh",
+  "python.languageServer": "Pylance",
+  "explorer.confirmDelete": false,
+  "editor.wordWrap": "on",
+  "workbench.editor.decorations.badges": true,
+  "workbench.editor.decorations.colors": true,
+  "workbench.editor.wrapTabs": true,
+  "[python]": {
+    "gitlens.codeLens.symbolScopes": ["!Module"],
+    "editor.wordBasedSuggestions": false
+  },
+  "jupyter.runStartupCommands": [
+    "import sys; sys.path.insert(0, '${workspaceRoot}')"
+  ],
+  "jupyter.askForKernelRestart": false,
+  "jupyter.textOutputLimit": 50000,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "files.insertFinalNewline": true,
+  "go.toolsManagement.autoUpdate": true,
+  "python.sortImports.args": [
+    "--profile",
+    "black",
+    "--line-length",
+    "120",
+    "--multi-line",
+    "3"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true,
+    "source.fixAll.eslint": true
+  },
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "[terraform]": {
+    "editor.defaultFormatter": "hashicorp.terraform"
+  },
+  "files.associations": {
+    "*.hcl": "terraform"
+  },
+  "yaml.customTags": ["!encrypted/pkcs1-oaep scalar", "!vault scalar"],
+  "ansible.validate.executablePath": "ansible-lint",
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "files.watcherExclude": {
+    "": true
+  },
+  "python.testing.pytestEnabled": true,
+  "redhat.telemetry.enabled": false,
+  "eslint.validate": ["javascript"],
+  "[javascript]": {
+    "editor.tabSize": 2
+  },
+  "[javascript][javascriptreact][mdx][typescript][typescriptreact][scss][markdown][json][jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.autoSave": "onFocusChange",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true
+  },
+  "vscode-yaml-sort.useCustomSortRecursively": true,
+  "vscode-yaml-sort.customSortKeywords_2": ["name"],
+  "python.linting.flake8Enabled": true,
+  "notebook.output.textLineLimit": 50000,
+  "jupyter.debugJustMyCode": false,
+  "diffEditor.codeLens": true,
+  "git.mergeEditor": false,
+  "plantuml.jar": "/opt/homebrew/Cellar/plantuml/1.2023.12/libexec/plantuml.jar",
+  "python.formatting.provider": "black",
+  "window.zoomLevel": 1,
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  }
 }

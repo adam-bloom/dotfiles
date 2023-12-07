@@ -86,7 +86,6 @@ plugins=(
 	kubectl
 	macos	
 	pip
-	pyenv
 	python
 	virtualenv
 	virtualenvwrapper
