@@ -142,9 +142,13 @@ source $ZSH/oh-my-zsh.sh
 
 export PROJECT_HOME=$HOME/Development
 
-bindkey "[D" backward-word
-bindkey "[C" forward-word
+bindkey "^[[1;3D" backward-word
+bindkey "^[[1;3C" forward-word
 
 if [ -f ~/.zsh/local.zshrc ]; then
     source ~/.zsh/local.zshrc
 fi
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

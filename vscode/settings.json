@@ -13,7 +13,8 @@
   "workbench.editor.wrapTabs": true,
   "[python]": {
     "gitlens.codeLens.symbolScopes": ["!Module"],
-    "editor.wordBasedSuggestions": false
+    "editor.wordBasedSuggestions": "off",
+    "editor.defaultFormatter": "ms-python.black-formatter"
   },
   "jupyter.runStartupCommands": [
     "import sys; sys.path.insert(0, '${workspaceRoot}')"
@@ -34,8 +35,8 @@
     "3"
   ],
   "editor.codeActionsOnSave": {
-    "source.organizeImports": true,
-    "source.fixAll.eslint": true
+    "source.organizeImports": "explicit",
+    "source.fixAll.eslint": "explicit"
   },
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
@@ -73,15 +74,14 @@
   },
   "vscode-yaml-sort.useCustomSortRecursively": true,
   "vscode-yaml-sort.customSortKeywords_2": ["name"],
-  "python.linting.flake8Enabled": true,
   "notebook.output.textLineLimit": 50000,
   "jupyter.debugJustMyCode": false,
   "diffEditor.codeLens": true,
   "git.mergeEditor": false,
-  "plantuml.jar": "/opt/homebrew/Cellar/plantuml/1.2023.12/libexec/plantuml.jar",
+  "plantuml.jar": "/opt/homebrew/Cellar/plantuml/1.2024.4/libexec/plantuml.jar",
   "python.formatting.provider": "black",
   "window.zoomLevel": 1,
-  "[yaml]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
   }
 }
