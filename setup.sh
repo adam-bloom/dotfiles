@@ -52,6 +52,7 @@ ln -sf "$(pwd)/zsh/p10k.zsh" "$HOME/.p10k.zsh"
 if [[ `uname` == 'Darwin' ]]; then
   # setup iterm2
   defaults write com.googlecode.iterm2 PrefsCustomFolder -string "$(pwd)/iterm2"
+  defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder --bool TRUE
 
   # setup vscode...must already be installed and `code` executable must be in path
   ln -sf "$(pwd)/vscode/settings.json" "$HOME/Library/Application Support/Code/User/settings.json"
