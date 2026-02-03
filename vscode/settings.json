@@ -35,7 +35,6 @@
     "3"
   ],
   "editor.codeActionsOnSave": {
-    "source.organizeImports": "explicit",
     "source.fixAll.eslint": "explicit"
   },
   "editor.formatOnSave": true,
@@ -55,7 +54,7 @@
   "files.watcherExclude": {
     "": true
   },
-  "python.testing.pytestEnabled": true,
+  "python.testing.pytestEnabled": false,
   "redhat.telemetry.enabled": false,
   "eslint.validate": ["javascript"],
   "[javascript]": {
@@ -83,5 +82,45 @@
   "window.zoomLevel": 1,
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
-  }
+  },
+  "playwright.showTrace": false,
+  "playwright.env": {},
+  "python.testing.promptToConfigure": false,
+  "playwright.reuseBrowser": false,
+  "docker.extension.enableComposeLanguageServer": false,
+  "mcpServers": {},
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    },
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "claudeCode.environmentVariables": [
+    { "name": "CLAUDE_CODE_USE_BEDROCK", "value": "1" },
+    { "name": "AWS_REGION", "value": "us-east-1" },
+    { "name": "AWS_PROFILE", "value": "qa-standard" },
+    {
+      "name": "ANTHROPIC_MODEL",
+      "value": "us.anthropic.claude-opus-4-5-20251101-v1:0"
+    },
+    {
+      "name": "ANTHROPIC_SMALL_FAST_MODEL",
+      "value": "us.anthropic.claude-sonnet-4-5-20250929-v1:0"
+    },
+    { "name": "CLAUDE_CODE_MAX_OUTPUT_TOKENS", "value": "8192" },
+    { "name": "MAX_THINKING_TOKENS", "value": "1024" }
+  ],
+  "github.copilot.enable": {
+    "*": false
+  },
+  "chat.disableAIFeatures": true,
+  "claudeCode.preferredLocation": "panel"
 }

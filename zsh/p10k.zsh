@@ -1364,12 +1364,12 @@
   #
   # You can define different colors, icons and content expansions for different classes:
   #
-  #   typeset -g POWERLEVEL9K_AWS_TEST_FOREGROUND=28
-  #   typeset -g POWERLEVEL9K_AWS_TEST_VISUAL_IDENTIFIER_EXPANSION='⭐'
+    typeset -g POWERLEVEL9K_AWS_QA_BACKGROUND=28
+    typeset -g POWERLEVEL9K_AWS_QA_VISUAL_IDENTIFIER_EXPANSION='🧪'
   #   typeset -g POWERLEVEL9K_AWS_TEST_CONTENT_EXPANSION='> ${P9K_CONTENT} <'
   typeset -g POWERLEVEL9K_AWS_CLASSES=(
-      # '*prod*'  PROD    # These values are examples that are unlikely
-      # '*test*'  TEST    # to match your needs. Customize them as needed.
+      '*prod*'  PROD    # These values are examples that are unlikely
+      '*qa*'  QA    # to match your needs. Customize them as needed.
       '*'       DEFAULT)
   # typeset -g POWERLEVEL9K_AWS_DEFAULT_FOREGROUND=7
   # typeset -g POWERLEVEL9K_AWS_DEFAULT_BACKGROUND=1
