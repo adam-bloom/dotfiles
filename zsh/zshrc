@@ -76,10 +76,11 @@ plugins=(
 	direnv
 	docker
 	extract
+	fzf
 	git
 	jira
 	kubectl
-	macos	
+	macos
 	pip
 	python
 	virtualenv
@@ -151,6 +152,9 @@ export PROJECT_HOME=$HOME/Development
 
 bindkey "^[[1;3D" backward-word
 bindkey "^[[1;3C" forward-word
+
+alias lt='ls -lthF'
+alias ltr='ls -ltrhF'   # reversed (oldest first)
 
 if [ -f ~/.zsh/local.zshrc ]; then
     source ~/.zsh/local.zshrc

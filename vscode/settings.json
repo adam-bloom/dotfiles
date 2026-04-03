@@ -14,54 +14,47 @@
   "[python]": {
     "gitlens.codeLens.symbolScopes": ["!Module"],
     "editor.wordBasedSuggestions": "off",
-    "editor.defaultFormatter": "ms-python.black-formatter"
+    "editor.defaultFormatter": "charliermarsh.ruff",
   },
   "jupyter.runStartupCommands": [
-    "import sys; sys.path.insert(0, '${workspaceRoot}')"
+    "import sys; sys.path.insert(0, '${workspaceRoot}')",
   ],
   "jupyter.askForKernelRestart": false,
   "jupyter.textOutputLimit": 50000,
   "workbench.editorAssociations": {
-    "*.ipynb": "jupyter-notebook"
+    "*.ipynb": "jupyter-notebook",
   },
   "files.insertFinalNewline": true,
   "go.toolsManagement.autoUpdate": true,
-  "python.sortImports.args": [
-    "--profile",
-    "black",
-    "--line-length",
-    "120",
-    "--multi-line",
-    "3"
-  ],
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit"
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports.ruff": "explicit",
   },
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
   "[terraform]": {
-    "editor.defaultFormatter": "hashicorp.terraform"
+    "editor.defaultFormatter": "hashicorp.terraform",
   },
   "files.associations": {
-    "*.hcl": "terraform"
+    "*.hcl": "terraform",
   },
   "yaml.customTags": ["!encrypted/pkcs1-oaep scalar", "!vault scalar"],
   "ansible.validate.executablePath": "ansible-lint",
   "notebook.cellToolbarLocation": {
     "default": "right",
-    "jupyter-notebook": "left"
+    "jupyter-notebook": "left",
   },
   "files.watcherExclude": {
-    "": true
+    "": true,
   },
   "python.testing.pytestEnabled": false,
   "redhat.telemetry.enabled": false,
   "eslint.validate": ["javascript"],
   "[javascript]": {
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
   },
   "[javascript][javascriptreact][mdx][typescript][typescriptreact][scss][markdown][json][jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "files.autoSave": "onFocusChange",
   "editor.bracketPairColorization.enabled": true,
@@ -69,7 +62,7 @@
   "files.exclude": {
     "**/.git": true,
     "**/.DS_Store": true,
-    "**/node_modules": true
+    "**/node_modules": true,
   },
   "vscode-yaml-sort.useCustomSortRecursively": true,
   "vscode-yaml-sort.customSortKeywords_2": ["name"],
@@ -78,10 +71,9 @@
   "diffEditor.codeLens": true,
   "git.mergeEditor": false,
   "plantuml.jar": "/opt/homebrew/Cellar/plantuml/1.2024.4/libexec/plantuml.jar",
-  "python.formatting.provider": "black",
   "window.zoomLevel": 1,
   "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
+    "editor.defaultFormatter": "vscode.html-language-features",
   },
   "playwright.showTrace": false,
   "playwright.env": {},
@@ -96,12 +88,12 @@
     "editor.quickSuggestions": {
       "other": true,
       "comments": false,
-      "strings": true
+      "strings": true,
     },
-    "editor.defaultFormatter": "redhat.vscode-yaml"
+    "editor.defaultFormatter": "redhat.vscode-yaml",
   },
   "[github-actions-workflow]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
+    "editor.defaultFormatter": "redhat.vscode-yaml",
   },
   "claudeCode.environmentVariables": [
     { "name": "CLAUDE_CODE_USE_BEDROCK", "value": "1" },
@@ -109,18 +101,24 @@
     { "name": "AWS_PROFILE", "value": "qa-standard" },
     {
       "name": "ANTHROPIC_MODEL",
-      "value": "us.anthropic.claude-opus-4-5-20251101-v1:0"
+      "value": "us.anthropic.claude-opus-4-5-20251101-v1:0",
     },
     {
       "name": "ANTHROPIC_SMALL_FAST_MODEL",
-      "value": "us.anthropic.claude-sonnet-4-5-20250929-v1:0"
+      "value": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
     },
     { "name": "CLAUDE_CODE_MAX_OUTPUT_TOKENS", "value": "8192" },
-    { "name": "MAX_THINKING_TOKENS", "value": "1024" }
+    { "name": "MAX_THINKING_TOKENS", "value": "1024" },
   ],
   "github.copilot.enable": {
-    "*": false
+    "*": false,
   },
   "chat.disableAIFeatures": true,
-  "claudeCode.preferredLocation": "panel"
+  "claudeCode.preferredLocation": "panel",
+  "gitlens.advanced.fileHistoryFollowsRenames": false,
+  "gitlens.statusBar.enabled": false,
+  "gitlens.hovers.enabled": false,
+  "gitlens.codeLens.enabled": false,
+  "gitlens.advanced.repositorySearchDepth": 0,
+  "notebook.lineNumbers": "on",
 }

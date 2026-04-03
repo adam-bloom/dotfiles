@@ -9,7 +9,7 @@ if [[ `uname` == 'Darwin' ]]; then
   fi
 
   # Homebrew packages.
-  brew install iterm2 visual-studio-code
+  brew install fzf iterm2 visual-studio-code
   brew tap homebrew/command-not-found
 fi
 
@@ -59,4 +59,5 @@ if [[ `uname` == 'Darwin' ]]; then
   code --install-extension zehfernando.theme-actual-obsidian
   code --install-extension ms-python.python
   code --install-extension ms-vscode.cpptools
+  code --install-extension charliermarsh.ruff
 fi
